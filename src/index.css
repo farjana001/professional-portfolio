@@ -12,10 +12,10 @@ code {
     monospace;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+/* h1, h2, h3, h4, h5, h6, p{
   margin: 0 !important;
   padding: 0;
-}
+} */
 .h-text{
   font-weight: 700;
 }
@@ -28,10 +28,10 @@ h1, h2, h3, h4, h5, h6, p{
   height: 700px;
   background-size: cover;
   background-position: top center;
+  border-bottom: 5px solid #000;
 }
 .header-content{
   margin-top: 100px;
-  /* margin-left: 50%; */
 }
 .nav-link{
   color: #4f9c2d;
@@ -54,6 +54,8 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .resume-btn{
   background: none;
+  color: #4f9c2d;
+  font-weight: 500;
   border: 2px solid #4f9c2d;
   font-size: 20px;
   margin-top: -6px;
@@ -62,4 +64,22 @@ h1, h2, h3, h4, h5, h6, p{
 .resume-btn:hover{
   background-color: #4f9c2d;
   color: #fff;
+}
+.text-brand{
+  font-weight: 700;
+  margin: 90px 0 70px;
+  text-align: center;
+}
+.text-brand u{
+  text-decoration: none;
+  border-bottom: 5px solid green;
+}
+.skill-icon img{
+  width: 100px;
+}
+.skill-icon{
+
+}
+.skill-icon:hover{
+
 }
