@@ -77,9 +77,35 @@ code {
 .skill-icon img{
   width: 100px;
 }
-.skill-icon{
-
+.project-container{
+  background-color: #E0FBB8;
 }
-.skill-icon:hover{
-
+.project-img{
+ box-shadow: 3px 3px 0 rgb(214, 212, 212);
+}
+.project-details{
+  background-color: #b6ec9f;
+  box-shadow: 5px 5px 0 #4f9c2d;
+  padding: 30px;
+}
+.tools{
+ background-color: #4f9c2d;
+ padding: 5px 10px;
+ color: white;
+ border-radius: 3px;
+}
+.tech-tools{
+  margin-left: -46px;
+}
+.live-link, .git-link{
+  background-color: rgb(24, 24, 24);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin: -5px 10px 0 -5px;
+  font-size: 15px;
+}
+.live-link:hover, .git-link:hover{
+  color: #4f9c2d;
+  text-decoration: none;
 }
