@@ -90,6 +90,7 @@ code {
 }
 .tools{
  background-color: #4f9c2d;
+ margin-bottom: 5px;
  padding: 5px 10px;
  color: white;
  border-radius: 3px;
@@ -108,4 +109,44 @@ code {
 .live-link:hover, .git-link:hover{
   color: #4f9c2d;
   text-decoration: none;
+}
+.explore-btn{
+  border: 2px solid #4f9c2d;
+  padding: 10px 35px;
+  color: black;
+  font-weight: 700;
+}
+.profile-img{
+  width: 200px;
+  border-radius: 50%;
+}
+.about-body{
+  
+}
+.contact{
+  background-color: #000;
+}
+.contact-form{
+  width: 40%;
+ 
+}
+.form input, .form textarea{
+ background-color: #83f552;
+ opacity: 0.6;
+}
+.send-sms{
+  border: 2px solid #4f9c2d;
+  background: none;
+  padding: 10px 40px;
+  color: white;
+  font-weight: 500;
+
+}
+.send-sms:hover{
+  background-color: #91e96c;
+  color: black;
+}
+.form input::placeholder, .form textarea::placeholder {
+  color: #000;
+  opacity: 1;
 }

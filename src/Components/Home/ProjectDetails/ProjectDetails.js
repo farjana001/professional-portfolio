@@ -6,7 +6,7 @@ const ProjectDetails = ({ projects }) => {
     // const technology = tools.item;
     console.log(tools);
     return (
-        <div className="container">
+        <div className="container pt-5">
             <div className="row d-flex align-items-center">
                 <div className="col-md-6 mb-5">
                 <div className="project-img">

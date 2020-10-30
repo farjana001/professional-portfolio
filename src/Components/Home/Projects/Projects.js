@@ -3,6 +3,7 @@ import volunteer from '../../../images/projects/done/volunteer.jpg'
 import creative from '../../../images/projects/done/creative agency.jpg'
 import travel from '../../../images/projects/done/travel-guru.jpg'
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
+import { Link } from 'react-router-dom';
 
 const projectData = [
     {
@@ -93,12 +94,15 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <div className="container-fluid project-container">
-            <h1 className="text-brand mb-5"><u>My Projects</u></h1>
+        <div className="container-fluid project-container pt-1 pb-5">
+            <h2 className="text-brand mb-5"><u>My Projects</u></h2>
             <div className="project-body">
                {
                    projectData.map(pr => <ProjectDetails key={pr.id} projects={pr} />)
                }
+            </div>
+            <div className="text-center py-4 explore">
+            <Link to="/" className="explore-btn">Explore More</Link>
             </div>
         </div>
     );
