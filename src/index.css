@@ -16,38 +16,61 @@ code {
   margin: 0 !important;
   padding: 0;
 } */
+.hello{
+  font-weight: 500;
+}
+.colored-letter{
+  color: rgb(5, 78, 5);
+}
 .h-text{
   font-weight: 700;
+  font-size: 50px;
 }
 .p-text{
   font-size: 18px;
+  font-weight: 500;
 }
-.header-bg{
-  background-image: url(./images/header-bg.jpg);
+/* .header-bg{
+  background-image: url(./images/header-bg2.jpg);
   background-repeat: no-repeat;
   height: 700px;
   background-size: cover;
   background-position: top center;
   border-bottom: 5px solid #000;
-}
+} */
 .header-content{
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .nav-link{
-  color: #4f9c2d;
+  color: green;
   font-weight: 500;
 }
 .work-btn{
-  border: 2px solid #4f9c2d;
+  border: 2px solid rgb(20, 82, 20);
   background: none;
   margin-top: 20px;
   font-weight: 600;
-  padding: 10px 40px;
-  background-color: #66D02E;
+  padding: 10px 50px;
+  background-color: green;
+  color: white;
 }
 .work-btn:hover{
   border: 2px solid #4f9c2d;
   background: none;
+  color: rgb(20, 82, 20);
+}
+.download{
+  border: 2px solid green;
+  padding: 11px 18px;
+  margin-right: 10px;
+  color: rgb(6, 90, 6);
+  font-weight: 500;
+  margin-top: 1px;
+}
+.download:hover{
+  text-decoration: none;
+  background-color: green;
+  color: white;
 }
 .nav-link:hover{
   color: #000;
