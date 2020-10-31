@@ -11,6 +11,7 @@ import Contact from './Components/Home/Contact/Contact';
 import Resume from './Components/Home/Resume/Resume';
 import Projects from './Components/Home/Projects/Projects';
 import Menubar from './Components/Home/Menubar/Menubar';
+import Blogs from './Components/Home/Blogs/Blogs';
 
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
       </Route>
       <Route path="/resume">
         <Resume />
+      </Route>
+      <Route path="/blogs">
+        <Blogs />
       </Route>
     </Switch>
   </Router>

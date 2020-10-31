@@ -100,16 +100,23 @@ code {
 .skill-icon img{
   width: 100px;
 }
-.project-container{
-  background-color: #E0FBB8;
+
+.project-body{
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 15px;
 }
-.project-img{
- box-shadow: 3px 3px 0 rgb(214, 212, 212);
+.project-img img{
+  /* box-shadow: 5px 5px 5px gray;
+  margin-bottom: 15px; */
+  border-radius: 10px 10px 0 0;
 }
 .project-details{
-  background-color: #b6ec9f;
-  box-shadow: 5px 5px 0 #4f9c2d;
-  padding: 30px;
+  background-color: #7ab95f;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+.project-description{
+  font-weight: 500;
 }
 .tools{
  background-color: #4f9c2d;
@@ -117,9 +124,14 @@ code {
  padding: 5px 10px;
  color: white;
  border-radius: 3px;
+ box-shadow: 2px 2px 2px gray;
 }
 .tech-tools{
-  margin-left: -46px;
+ margin-left: -40px;
+
+}
+.links{
+
 }
 .live-link, .git-link{
   background-color: rgb(24, 24, 24);
@@ -135,9 +147,14 @@ code {
 }
 .explore-btn{
   border: 2px solid #4f9c2d;
-  padding: 10px 35px;
+  padding: 10px 85px;
   color: black;
   font-weight: 700;
+}
+.explore-btn:hover{
+  background-color: #4f9c2d;
+  color: #fff;
+  text-decoration: none;
 }
 .profile-img{
   width: 200px;
@@ -149,8 +166,8 @@ code {
 .contact{
   background-color: #000;
 }
-.contact-form{
-  width: 40%;
+.form{
+  width: 80%;
  
 }
 .form input, .form textarea{
@@ -172,4 +189,8 @@ code {
 .form input::placeholder, .form textarea::placeholder {
   color: #000;
   opacity: 1;
+}
+.social-icon ul li>img{
+  width: 85%;
+  padding: 5px;
 }

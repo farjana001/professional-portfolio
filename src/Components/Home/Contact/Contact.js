@@ -1,8 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import facebook from '../../../images/social-icons/fb.png';
-import linkedIn from '../../../images/social-icons/ln.png';
-import github from '../../../images/social-icons/git.png';
+import linkedIn from '../../../images/social-icons/linkedin.png';
+import github from '../../../images/social-icons/github.png';
 
 
 const onSubmit = (e) => {
@@ -28,14 +28,29 @@ const onSubmit = (e) => {
 const Contact = () => {
     return (
         <div className="container-fluid p-5 mt-5 contact">
-            <div className="contact-form text-center mx-auto py-5">
-                <form className="form" onSubmit={onSubmit} id="form">
-                    <input name="name" type="text" placeholder="Full-name" className="form-input form-control" /> <br />
-                    <input name="subject" type="text" placeholder="Subject…" className="form-input form-control" /> <br />
-                    <textarea name="message" type="text" placeholder="Your Message…" className="form-input-message form-control"></textarea> <br />
-                    <button className="send-sms">Send Message</button>
-                </form >
-                <div className="social-icon">
+            <div className="row d-flex align-items-center py-3">
+                <div className="col-md-6">
+                    <form className="form ml-5" onSubmit={onSubmit} id="form">
+                        <input name="name" type="text" placeholder="Full-name" className="form-input form-control" /> <br />
+                        <input name="subject" type="text" placeholder="Subject…" className="form-input form-control" /> <br />
+                        <textarea name="message" type="text" placeholder="Your Message…" className="form-input-message form-control"></textarea> <br />
+                        <button className="send-sms">Send Message</button>
+                    </form >
+                </div>
+                <div className="col-md-6">
+                    <div className="text-right text-white">
+                        <p><strong>Phone: </strong>01838xxxxxx</p>
+                        <p className="mt-n3"><strong>Email:</strong><em> nipa.farzana87@gmail.com</em></p>
+                        <p className="mt-n3">Banarupa</p>
+                        <p className="mt-n3">Rangamati, 4500</p>
+                        <div className="social-icon ">
+                            <ul className="list-inline-mb-0">
+                                <a target="_blank"href="https://www.facebook.com/FarzanaNip/"><li className="list-inline-item"><img src={facebook} alt="" /></li></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/farjana-islam-9106681ba/"><li className="list-inline-item"><img src={linkedIn} alt="" /></li></a>
+                                <a target="_blank" href="https://github.com/farjana001"><li className="list-inline-item"><img src={github} alt="" /></li></a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div >
         </div >

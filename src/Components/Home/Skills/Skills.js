@@ -54,7 +54,7 @@ import SkillDetails from '../SkillDetails/SkillDetails';
 const Skills = () => {
     return (
         <div className="container my-5">
-            <h1 className="text-center text-brand"><u>Key Skills</u></h1>
+            <h2 className="text-center text-brand"><u>Key Skills</u></h2>
             <div className="row">
                 {
                     skillData.map(skl => <SkillDetails key={skl.id} skills={skl} />)

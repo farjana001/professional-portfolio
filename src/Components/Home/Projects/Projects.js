@@ -9,7 +9,7 @@ const projectData = [
     {
         id: 1,
         title: "Volunteer Network",
-        description: "A full-stack web application where authenticated users can perform for a volunteer service. Admins can keep the records of all registered services and handle them as well.",
+        description: "A full-stack volunteer Service web application",
         img: volunteer,
         tools: [
             {
@@ -37,7 +37,7 @@ const projectData = [
     {
         id: 2,
         title: "Creative Agency",
-        description: "A complete responsive website where authenticated user can place order for his/her chosen services. Admin panel can handle all the services and access of admin.",
+        description: "A complete responsive service selling website",
         img: creative,
         tools: [
             {
@@ -65,17 +65,14 @@ const projectData = [
     {
         id: 3,
         title: "Travel Guru",
-        description: "A travel booking web application where user can book a travel plan by giving his/her required information.",
+        description: "A travel booking web application",
         img: travel,
         tools: [
             {
                 item: "React"
             },
             {
-                item: "Node.js"
-            },
-            {
-                item: "MongoDB"
+                item: "MaterialUI"
             },
             {
                 item: "Bootstrap"
@@ -94,9 +91,9 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <div className="container-fluid project-container pt-1 pb-5">
-            <h2 className="text-brand mb-5"><u>My Projects</u></h2>
-            <div className="project-body">
+        <div className="container-fluid px-5 pt-1 pb-5">
+            <h2 className="text-brand mb-5"><u>Some of My Projects</u></h2>
+            <div className="row">
                {
                    projectData.map(pr => <ProjectDetails key={pr.id} projects={pr} />)
                }
