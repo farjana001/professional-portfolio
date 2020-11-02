@@ -12,6 +12,8 @@ import Resume from './Components/Home/Resume/Resume';
 import Projects from './Components/Home/Projects/Projects';
 import Menubar from './Components/Home/Menubar/Menubar';
 import Blogs from './Components/Home/Blogs/Blogs';
+import ProjectPage from './Components/ProjectPage/ProjectPage';
+import AboutMePage from './Components/AboutMePage/AboutMePage';
 
 
 function App() {
@@ -26,10 +28,10 @@ function App() {
         <Home />
       </Route>
       <Route path="/projects">
-        <Projects />
+        <ProjectPage />
       </Route>
       <Route path="/about">
-        <AboutMe />
+        <AboutMePage />
       </Route>
       <Route path="/contact">
         <Contact />

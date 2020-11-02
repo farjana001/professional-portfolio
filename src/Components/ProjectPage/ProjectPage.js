@@ -1,11 +1,13 @@
 import React from 'react';
-import volunteer from '../../../images/projects/done/volunteer.jpg'
-import creative from '../../../images/projects/done/creative agency.jpg'
-import travel from '../../../images/projects/done/travel-guru.jpg'
-import ProjectDetails from '../ProjectDetails/ProjectDetails';
-import { Link } from 'react-router-dom';
+import volunteer from '../../images/projects/done/volunteer.jpg'
+import creative from '../../images/projects/done/creative agency.jpg'
+import travel from '../../images/projects/done/travel-guru.jpg'
+import onlineSchool from '../../images/projects/done/online-course.jpg'
+import socialBuddy from '../../images/projects/done/social-buddy.jpg'
+import eSchool from '../../images/projects/done/e-school.jpg'
+import ProjectPageDetails from '../ProjectPageDetails/ProjectPageDetails';
 
-const projectData = [
+const allProjectData = [
     {
         id: 1,
         title: "Volunteer Network",
@@ -135,23 +137,123 @@ const projectData = [
         live: "https://travel-gurus.web.app",
         git: "https://github.com/farjana001/travel-guru"
     },
+   {
+    id: 4,
+    title: "Online School",
+    description: "A online education web application",
+    img: onlineSchool,
+    tools: [
+        {
+            item: "JavasCript"
+        },
+        {
+            item: "Bootstrap"
+        },
+        {
+            item: "HTML"
+        },
+        {
+            item: "Css"
+        }
+    ],
+    features: [
+        {
+            feature: "Education service list with details."
+        },
+        {
+            feature: "Cart section for addeded courses"
+        },
+        {
+            feature: "Course price calculating system."
+        }
+    ],
+    live: "https://awesome-swartz-a830a0.netlify.app/",
+    git: "https://github.com/farjana001/online-course"
+},
+{
+    id: 5,
+    title: "Social Buddy",
+    description: "A dummy social web app.",
+    img: socialBuddy,
+    tools: [
+        {
+            item: "React"
+        },
+        {
+            item: "MaterialUI"
+        },
+        {
+            item: "Bootstrap"
+        },
+        {
+            item: "HTML"
+        },
+        {
+            item: "Css"
+        }
+    ],
+    features: [
+        {
+            feature: "All data loaded from random user API"
+        },
+        {
+            feature: "Comments section available for every post"
+        },
+        {
+            feature: "Full website made by MaterialUI"
+        }
+    ],
+    live: "https://ecstatic-varahamihira-ea1ac5.netlify.app/",
+    git: "https://github.com/farjana001/social-buddy"
+},
+{
+    id: 6,
+    title: "E-School Learning.",
+    description: "A dummy e-school static webpage.",
+    img: eSchool,
+    tools: [
+        {
+            item: "Bootstrap"
+        },
+        {
+            item: "HTML"
+        },
+        {
+            item: "Css"
+        }
+    ],
+    features: [
+        {
+            feature: "Converted from psd to pure Html, Css and Bootstrap."
+        },
+        {
+            feature: "Complete responsive website."
+        },
+        {
+            feature: "Owl carousel implemented in review section."
+        }
+    ],
+    live: "https://farjana001.github.io/e-school-learning/index.html",
+    git: "https://github.com/farjana001/e-school-learning"
+}
+        
 ];
 
 
-const Projects = () => {
+const ProjectPage = () => {
+
     return (
-        <div className="container-fluid px-5 pt-1 pb-5">
-            <h2 className="text-brand mb-5"><u>Some of My Projects</u></h2>
+        <div className="container-fluid px-5 mt-n4 pb-5">
+            <h2 className="text-brand mb-5"><u>Projects done by me</u></h2>
             <div className="row">
-               {
-                   projectData.map(pr => <ProjectDetails key={pr.id} projects={pr} />)
-               }
+                {
+                    allProjectData.map(pr => <ProjectPageDetails key={pr.id} projects={pr} />)
+                }
             </div>
-            <div className="text-center py-4 explore mt-5">
-            <Link to="/projects" className="explore-btn">Explore More</Link>
+            <div className="text-center py-4 explore">
             </div>
         </div>
     );
 };
 
-export default Projects;
+export default ProjectPage;

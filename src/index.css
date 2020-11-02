@@ -20,7 +20,7 @@ code {
   font-weight: 500;
 }
 .colored-letter{
-  color: rgb(5, 78, 5);
+  color: rgb(6, 122, 6);
 }
 .h-text{
   font-weight: 700;
@@ -58,6 +58,7 @@ code {
   border: 2px solid #4f9c2d;
   background: none;
   color: rgb(20, 82, 20);
+  text-decoration: none;
 }
 .download{
   border: 2px solid green;
@@ -102,9 +103,35 @@ code {
 }
 
 .project-body{
-  box-shadow: 5px 5px 5px gray;
+  position: relative;
+  box-shadow: 5px 5px 10px rgb(187, 187, 187);
   border-radius: 15px;
+  perspective: 1000px;
 }
+.project-body .project-card{
+  transform: rotateY(0);
+  transition: all 0.5s ease-in-out 0s;
+}
+.project-body:hover .project-card{
+  transform: rotateY(-90deg);
+}
+.project-body .project-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px 30px 40px 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color:white;
+  transform: rotateY(90deg);
+  transition: all 0.5s ease-in-out 0s;
+}
+.project-body:hover .project-content{
+  transform: rotateY(0);
+}
+
 .project-img img{
   /* box-shadow: 5px 5px 5px gray;
   margin-bottom: 15px; */
@@ -119,10 +146,11 @@ code {
   font-weight: 500;
 }
 .tools{
- background-color: #4f9c2d;
+  border: 1px solid black;
+ /* background-color: #4f9c2d; */
  margin-bottom: 5px;
  padding: 5px 10px;
- color: white;
+ color: #162c0c;
  border-radius: 3px;
  box-shadow: 2px 2px 2px gray;
 }
@@ -135,6 +163,7 @@ code {
 }
 .live-link, .git-link{
   background-color: rgb(24, 24, 24);
+  border: 1px solid green;
   color: white;
   padding: 6px 10px;
   border-radius: 3px;
@@ -142,7 +171,8 @@ code {
   font-size: 15px;
 }
 .live-link:hover, .git-link:hover{
-  color: #4f9c2d;
+  background-color: #295f11;
+  color: white;
   text-decoration: none;
 }
 .explore-btn{
@@ -193,4 +223,22 @@ code {
 .social-icon ul li>img{
   width: 85%;
   padding: 5px;
+}
+.address{
+
+}
+.about-me{
+  background-color: #baeca4;
+}
+.about-text{
+  margin-top: -1px;
+}
+.address{
+  background-image: url(./images/about.png);
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.address-text{
+  margin-top: 100px;
 }

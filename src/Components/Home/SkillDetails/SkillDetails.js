@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SkillDetails = ({ skills }) => {
-    console.log(skills);
+
     return (
         <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="skill-icon text-center bg-white m-3 shadow py-5 px-3">
