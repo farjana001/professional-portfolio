@@ -30,17 +30,7 @@ code {
   font-size: 18px;
   font-weight: 500;
 }
-/* .header-bg{
-  background-image: url(./images/header-bg2.jpg);
-  background-repeat: no-repeat;
-  height: 700px;
-  background-size: cover;
-  background-position: top center;
-  border-bottom: 5px solid #000;
-} */
-.header-content{
-  /* margin-top: 100px; */
-}
+
 .nav-link{
   color: green;
   font-weight: 500;
@@ -100,6 +90,11 @@ code {
 }
 .skill-icon img{
   width: 100px;
+  transition: all 0.3s ease;
+}
+.skill-icon img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .project-body{
@@ -158,9 +153,7 @@ code {
  margin-left: -40px;
 
 }
-.links{
 
-}
 .live-link, .git-link{
   background-color: rgb(24, 24, 24);
   border: 1px solid green;
@@ -189,9 +182,6 @@ code {
 .profile-img{
   width: 200px;
   border-radius: 50%;
-}
-.about-body{
-  
 }
 .contact{
   background-color: #000;
@@ -224,9 +214,7 @@ code {
   width: 85%;
   padding: 5px;
 }
-.address{
 
-}
 .about-me{
   background-color: #baeca4;
 }
@@ -240,5 +228,5 @@ code {
   background-position: bottom center;
 }
 .address-text{
-  margin-top: 100px;
+  /* margin-top: 290px; */
 }

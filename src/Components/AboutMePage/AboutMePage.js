@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutMe from '../../images/about.png';
 import profile from '../../images/profile1.jpg';
-import resume from '../../images/resume.pdf';
+import resume from '../../images/resume .pdf';
 import facebook from '../../images/social-icons/fb.png';
 import linkedIn from '../../images/social-icons/linkedin.png';
 import github from '../../images/social-icons/github.png';
@@ -24,14 +24,13 @@ const AboutMePage = () => {
             </div>
             <div className="col-md-6 address">
                 <div className="text-right mt-5">
-                    {/* <img className="img-fluid mt-5" src={aboutMe} alt="" /> */}
-                    <div className="text-center text-white address-text">
+                    <div className="text-end text-white address-text pr-3">
                         <p><strong>Phone: </strong>01838xxxxxx</p>
                         <p className="mt-n3"><strong>Email:</strong><em> nipa.farzana87@gmail.com</em></p>
                         <p className="mt-n3"><strong>GitHub:</strong><em> https://github.com/farjana001</em></p>
                         <p className="mt-n3">Banarupa</p>
                         <p className="mt-n3">Rangamati, 4500</p>
-                        <div className="social-icon mr-5">
+                        <div className="social-icon mr-1">
                             <ul className="list-inline-mb-0">
                                 <a target="_blank"href="https://www.facebook.com/FarzanaNip/"><li className="list-inline-item"><img src={facebook} alt="" /></li></a>
                                 <a target="_blank" href="https://www.linkedin.com/in/farjana-islam-9106681ba/"><li className="list-inline-item"><img src={linkedIn} alt="" /></li></a>

@@ -1,7 +1,7 @@
 import React from 'react';
-import aboutMe from '../../../images/about.png';
+import aboutMe from '../../../images/about1.png';
 import profile from '../../../images/profile1.jpg';
-import resume from '../../../images/resume.pdf';
+import resume from '../../../images/resume .pdf';
 
 const AboutMe = () => {
     return (
@@ -11,7 +11,7 @@ const AboutMe = () => {
                     <div className="about-body text-center">
                         <h2 className="font-weight-bold">About Me</h2>
                         <img className="img-fluid profile-img my-3" src={profile} alt="" />
-                        <div className="about-me">
+                        <div className="">
                             <h2>Hi,</h2>
                             <p>I am Farjana Islam. I am a front-end web developer. I don't like to define myself by the work i have done. I want to define myself by the work i want to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself and do interesting things that matters. <br/> I love to design along with development. Eventually, I decided that it would be a fun challenge to try designing and building my own.</p><br/>
                             <a className="download" href={resume} download>Download Resume</a>

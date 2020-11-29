@@ -1,15 +1,63 @@
-import React from 'react';
-import volunteer from '../../images/projects/done/volunteer.jpg'
-import creative from '../../images/projects/done/creative agency.jpg'
-import travel from '../../images/projects/done/travel-guru.jpg'
-import onlineSchool from '../../images/projects/done/online-course.jpg'
-import socialBuddy from '../../images/projects/done/social-buddy.jpg'
-import eSchool from '../../images/projects/done/e-school.jpg'
+import React, { useEffect } from 'react';
+import volunteer from '../../images/projects/done/volunteer.jpg';
+import creative from '../../images/projects/done/creative agency.jpg';
+import travel from '../../images/projects/done/travel-guru.jpg';
+import onlineSchool from '../../images/projects/done/online-course.jpg';
+import socialBuddy from '../../images/projects/done/social-buddy.jpg';
+import eSchool from '../../images/projects/done/e-school.jpg';
 import ProjectPageDetails from '../ProjectPageDetails/ProjectPageDetails';
+import Power from '../../images/projects/done/power.jpg';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const allProjectData = [
     {
         id: 1,
+        title: "Power X Gym",
+        description: "MERN Stack website for gym lovers",
+        img: Power,
+        tools: [
+            {
+                item: "React"
+            },
+            {
+                item: "Node.js"
+            },
+            {
+                item: "MongoDB"
+            },
+            {
+                item: "Bootstrap"
+            },
+            {
+                item: "HTML"
+            },
+            {
+                item: "Css"
+            }
+        ],
+        features: [
+            {
+               feature: "This is a team project where I have worked with two other team members." 
+            },
+            {
+                feature: "Gym lovers can choose the classes that suit best with them. "
+            },
+            {
+                feature: "Every class has its detailed features and time schedule."
+            },
+            {
+                feature: "3 types of membership plans are implemented."
+            },
+            {
+                feature: "After filling a required form users are redirected to the billing page."
+            }
+        ],
+        live: "https://brave-archimedes-223a81.netlify.app/",
+        git: "https://github.com/CoderTeam21/Power-x-gym"
+    },
+    {
+        id: 2,
         title: "Volunteer Network",
         description: "A full-stack volunteer Service web application",
         img: volunteer,
@@ -54,7 +102,7 @@ const allProjectData = [
         git: "https://github.com/farjana001/volunteer-network"
     },
     {
-        id: 2,
+        id: 3,
         title: "Creative Agency",
         description: "A complete responsive service selling website",
         img: creative,
@@ -99,7 +147,7 @@ const allProjectData = [
         git: "https://github.com/farjana001/assignment-10"
     },
     {
-        id: 3,
+        id: 4,
         title: "Travel Guru",
         description: "A travel booking web application",
         img: travel,
@@ -138,7 +186,7 @@ const allProjectData = [
         git: "https://github.com/farjana001/travel-guru"
     },
    {
-    id: 4,
+    id: 5,
     title: "Online School",
     description: "A online education web application",
     img: onlineSchool,
@@ -171,7 +219,7 @@ const allProjectData = [
     git: "https://github.com/farjana001/online-course"
 },
 {
-    id: 5,
+    id: 6,
     title: "Social Buddy",
     description: "A dummy social web app.",
     img: socialBuddy,
@@ -207,7 +255,7 @@ const allProjectData = [
     git: "https://github.com/farjana001/social-buddy"
 },
 {
-    id: 6,
+    id: 7,
     title: "E-School Learning.",
     description: "A dummy e-school static webpage.",
     img: eSchool,
@@ -241,13 +289,15 @@ const allProjectData = [
 
 
 const ProjectPage = () => {
-
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    },[])
     return (
         <div className="container-fluid px-5 mt-n4 pb-5">
             <h2 className="text-brand mb-5"><u>Projects done by me</u></h2>
             <div className="row">
                 {
-                    allProjectData.map(pr => <ProjectPageDetails key={pr.id} projects={pr} />)
+                    allProjectData.map(pr => <ProjectPageDetails data-aos="fade-up" key={pr.id} projects={pr} />)
                 }
             </div>
             <div className="text-center py-4 explore">
