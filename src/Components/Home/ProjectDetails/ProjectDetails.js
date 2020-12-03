@@ -18,7 +18,7 @@ const ProjectDetails = ({ projects }) => {
                     <div className="project-details">
                         <h4 className="font-weight-bold">{title}</h4>
                         <p className="project-description">{description}</p>
-                        <ul className="list-inline-mb-0 tech-tools align-left">
+                        <ul data-aos="slide-down" className="list-inline-mb-0 tech-tools align-left">
                             {
                                 tools.map(tl => <li className="list-inline-item tools">{tl.item}</li>)
                             }
